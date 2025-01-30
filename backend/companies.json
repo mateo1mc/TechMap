@@ -1,14 +1,22 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "name": "Dexi AL",
         "lat": 41.3223704,
         "lng": 19.8197604,
-        "info": "Digital Commerce Intelligence.",
         "website": "https://www.dexi.io",
         "address": "BLVD Deshmoret e Kombit Twin Tower FL 2, Tiranë 1001, Albania",
-        "phone": "402-663-9161",
-        "e-mail": "sales@dexi.io",
-        "careers": "https://www.dexi.io/careers/"
+        "careers": "https://www.dexi.io/careers/",
+        "more_info": "https://opencorporates.al/sq/nipt/m02312006s"
+    },
+    {
+        "id": 1,
+        "name": "ATIS Systems",
+        "lat": 41.3353451,
+        "lng": 19.8166053,
+        "website": "http://atis.al/",
+        "address": "BLVD Deshmoret e Kombit Twin Tower FL 2, Tiranë 1001, Albania",
+        "careers": "https://atis.al/about-us/careers/",
+        "more_info": "https://opencorporates.al/sq/nipt/m11314027d"
     }
 ]

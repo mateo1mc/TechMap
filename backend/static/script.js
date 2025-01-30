@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     <b>${company.name}</b><br>
                     ${company.website ? `Website: <a href="${company.website}" target="_blank">${company.website}</a>` : ''}<br>
                     ${company.address ? `Address: ${company.address}` : ''}<br>
-                    ${company.phone ? `Phone: ${company.phone}` : ''}<br>
                     ${company.careers ? `Careers: <a href="${company.careers}" target="_blank">Open Positions</a>` : ''}<br>
+                    ${company.more_info ? `More Info: <a href="${company.more_info}" target="_blank">Click here</a>` : ''}<br>
                 `;
                 marker.bindPopup(popupContent);
             });
