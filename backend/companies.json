@@ -386,7 +386,7 @@
     {
         "id": 49,
         "name": "EvolutIT shpk",
-        "lat": 41.33711588900228, 
+        "lat": 41.33711588900228,
         "lng": 19.811603150956593,
         "website": "https://www.evolutit.com/",
         "address": "https://maps.app.goo.gl/n8Y6iU6ryNRRX9Dz6"
@@ -429,7 +429,7 @@
         "lat": 41.3338131,
         "lng": 19.8052089,
         "website": "http://www.onetech.eu/",
-        "address":"https://www.google.com/maps/place/OneTech/data=!4m7!3m6!1s0x135031a6e36b8547:0x391d5f5dae6e992b!8m2!3d41.3338131!4d19.8052089!16s%2Fg%2F11dfljtmpz!19sChIJR4Vr46YxUBMRK5lurl1fHTk"
+        "address": "https://www.google.com/maps/place/OneTech/data=!4m7!3m6!1s0x135031a6e36b8547:0x391d5f5dae6e992b!8m2!3d41.3338131!4d19.8052089!16s%2Fg%2F11dfljtmpz!19sChIJR4Vr46YxUBMRK5lurl1fHTk"
     },
     {
         "id": 55,
@@ -850,7 +850,7 @@
     {
         "id": 109,
         "name": "Deloitte",
-        "lat": 41.32266125270875, 
+        "lat": 41.32266125270875,
         "lng": 19.793182892601013,
         "website": "https://www2.deloitte.com/al/en.html",
         "address": "https://maps.app.goo.gl/X1UYAXVeHja7kzyT9"
@@ -867,7 +867,7 @@
         "id": 111,
         "name": "Logical",
         "lat": 41.31779230178915,
-        "lng":  19.805616909193013,
+        "lng": 19.805616909193013,
         "website": "https://www.logic.al/",
         "address": "https://maps.app.goo.gl/otZ4tojFHEEoB4oA7"
     },
@@ -1062,5 +1062,12 @@
         "lng": 19.8175686,
         "website": "https://paridsmartsolution.al/",
         "address": "https://www.google.com/maps/place/Parid+Smart+Solution/@41.3190947,19.8175686,17z/data=!3m1!4b1!4m6!3m5!1s0x135031b04e8b72c3:0xf7f4a7a8e9cc57a5!8m2!3d41.3190947!4d19.8175686!16s%2Fg%2F11t5h4zxmx?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "name": "More Codes.",
+        "info": "i dont know",
+        "website": "mateocela.com",
+        "address": "testtest",
+        "phone": ""
     }
 ]

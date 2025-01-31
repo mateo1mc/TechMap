@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Companies in Albania</title>
-    <!-- Link to CSS file -->
+    <title>TechMap</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-    <h1>Tech Companies in Albania</h1>
+    <h1>TechMap</h1>
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="Search for companies...">
+        <button id="searchButton">Search</button>
+        <button id="suggestButton">Suggest a Company</button>
+    </div>
     <div id="map" style="height: 600px;"></div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <!-- Link to JS file -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
