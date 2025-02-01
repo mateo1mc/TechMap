@@ -46,6 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     // If not searching or no results, reset to initial view
                     map.setView(initialCoordinates, initialZoom);
                 }
+
+                // Ensure the clear button is visible if there's text in the search bar
+                const clearButton = document.getElementById('clearSearch');
+                clearButton.style.display = searchQuery ? 'block' : 'none';
             })
             .catch(error => console.error('Error fetching company data:', error));
     }
@@ -58,12 +62,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('searchInput').value = '';
         loadCompanies();
         this.style.display = 'none';
+        updateDropdown(''); // Clear the dropdown
     });
 
     // Show/hide clear button based on input
     document.getElementById('searchInput').addEventListener('input', function () {
         const clearButton = document.getElementById('clearSearch');
         clearButton.style.display = this.value ? 'block' : 'none';
+        updateDropdown(this.value); // Update dropdown based on input
     });
 
     // Load company names for autocomplete
@@ -72,11 +78,63 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 const companyNames = data.map(company => company.name);
-                const datalist = document.getElementById('companyNames');
-                datalist.innerHTML = companyNames.map(name => `<option value="${name}">`).join('');
+                const customDropdown = document.getElementById('customDropdown');
+
+                // Clear existing options
+                customDropdown.innerHTML = '';
+
+                // Add options to the custom dropdown
+                companyNames.forEach(name => {
+                    const option = document.createElement('div');
+                    option.textContent = name;
+                    option.addEventListener('click', function () {
+                        document.getElementById('searchInput').value = name;
+                        customDropdown.style.display = 'none';
+                        loadCompanies(name); // Filter companies based on the selected option
+                    });
+                    customDropdown.appendChild(option);
+                });
             })
             .catch(error => console.error('Error fetching company names:', error));
     }
+
+    // Update dropdown based on search input
+    function updateDropdown(searchQuery) {
+        const customDropdown = document.getElementById('customDropdown');
+        const options = customDropdown.querySelectorAll('div');
+
+        options.forEach(option => {
+            if (option.textContent.toLowerCase().includes(searchQuery.toLowerCase())) {
+                option.style.display = 'block';
+            } else {
+                option.style.display = 'none';
+            }
+        });
+
+        // Show dropdown if there are matching options
+        if (searchQuery && customDropdown.children.length > 0) {
+            customDropdown.style.display = 'block';
+        } else {
+            customDropdown.style.display = 'none';
+        }
+    }
+
+    // Show dropdown when search input is focused
+    document.getElementById('searchInput').addEventListener('focus', function () {
+        const customDropdown = document.getElementById('customDropdown');
+        if (this.value === '') {
+            customDropdown.style.display = 'block';
+        }
+    });
+
+    // Hide dropdown when search input loses focus
+    document.getElementById('searchInput').addEventListener('blur', function () {
+        // Hide dropdown after a short delay to allow click events
+        setTimeout(() => {
+            const customDropdown = document.getElementById('customDropdown');
+            customDropdown.style.display = 'none';
+        }, 200);
+    });
 
     // Load company names for autocomplete
     loadCompanyNames();

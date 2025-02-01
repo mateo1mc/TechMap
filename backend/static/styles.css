@@ -125,3 +125,49 @@ button:active {
 ::-webkit-scrollbar-thumb:hover {
     background: #00cc66;
 }
+
+/* Custom Dropdown */
+.custom-dropdown {
+    position: absolute;
+    top: 100%; /* Position it below the search bar */
+    left: 0;
+    width: 100%; /* Match the width of the search bar */
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none; /* Hidden by default */
+    margin-top: 5px; /* Add a small gap between the search bar and dropdown */
+}
+
+.custom-dropdown div {
+    padding: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-dropdown div:hover {
+    background-color: #333; /* Hover effect */
+}
+
+/* Scrollbar for custom dropdown */
+.custom-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-dropdown::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+.custom-dropdown::-webkit-scrollbar-thumb {
+    background: #00ff88;
+    border-radius: 4px;
+}
+
+.custom-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #00cc66;
+}
