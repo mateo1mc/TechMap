@@ -288,7 +288,7 @@
         "address": "https://www.google.com/maps/place/Morix/data=!4m7!3m6!1s0x135031ad0d2efe29:0x6f02a9899f19e2d8!8m2!3d41.3217336!4d19.7996438!16s%2Fg%2F11b6x7hy95!19sChIJKf4uDa0xUBMR2OIZn4mpAm8"
     },
     {
-        "id": 3,
+        "id": 37,
         "name": "MARKON",
         "lat": 41.327092,
         "lng": 19.8159668,
@@ -513,7 +513,7 @@
     },
     {
         "id": 66,
-        "name": "IKONS (THE NEARSHORE COMPANY)",
+        "name": "IKONS",
         "lat": 41.3179561,
         "lng": 19.8261325,
         "website": "http://www.ikons-see.com/",
@@ -718,6 +718,14 @@
         "lng": 19.8076774,
         "website": "https://ortek.al/",
         "address": "https://maps.app.goo.gl/sxHfGyrVhWbZa4b98"
+    },
+    {
+        "id": 92,
+        "name": "Parid Smart Solution",
+        "lat": 41.3190947,
+        "lng": 19.8175686,
+        "website": "https://paridsmartsolution.al/",
+        "address": "https://www.google.com/maps/place/Parid+Smart+Solution/@41.3190947,19.8175686,17z/data=!3m1!4b1!4m6!3m5!1s0x135031b04e8b72c3:0xf7f4a7a8e9cc57a5!8m2!3d41.3190947!4d19.8175686!16s%2Fg%2F11t5h4zxmx?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
     },
     {
         "id": 93,
@@ -961,11 +969,11 @@
     },
     {
         "id": 123,
-        "name": "Strowberry Code Albania",
-        "lat": 41.33649543150937,
-        "lng": 19.814269873012787,
-        "website": "https://strowberrycode.com/",
-        "address": "https://maps.app.goo.gl/xiu4vEQ2ufvdpht69"
+        "name": "Albania Lab",
+        "lat": 41.3267048,
+        "lng": 19.8069386,
+        "website": "https://www.albanialab.al/",
+        "address": "https://www.google.com/maps/place/Kavaja+St+109,+Tiran%C3%AB,+Albania/@41.3267048,19.8069386,163m/data=!3m2!1e3!4b1!4m6!3m5!1s0x135031077093d93f:0xd373a6838e7eb487!8m2!3d41.3267048!4d19.8075823!16s%2Fg%2F11h04r19gq?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
     },
     {
         "id": 124,
@@ -1057,17 +1065,10 @@
     },
     {
         "id": 135,
-        "name": "Parid Smart Solution",
-        "lat": 41.3190947,
-        "lng": 19.8175686,
-        "website": "https://paridsmartsolution.al/",
-        "address": "https://www.google.com/maps/place/Parid+Smart+Solution/@41.3190947,19.8175686,17z/data=!3m1!4b1!4m6!3m5!1s0x135031b04e8b72c3:0xf7f4a7a8e9cc57a5!8m2!3d41.3190947!4d19.8175686!16s%2Fg%2F11t5h4zxmx?entry=ttu&g_ep=EgoyMDI1MDEyOC4wIKXMDSoASAFQAw%3D%3D"
-    },
-    {
-        "name": "More Codes.",
-        "info": "i dont know",
-        "website": "mateocela.com",
-        "address": "testtest",
-        "phone": ""
+        "name": "Smartwork",
+        "lat": 41.3363688,
+        "lng": 19.8144158,
+        "website": "https://smartworknet.eu/",
+        "address": "https://www.google.com/maps/place/Smartwork+shpk/@41.3363688,19.8144158,17z/data=!3m1!4b1!4m6!3m5!1s0x1350311fa563210d:0xc25e15a7f62db683!8m2!3d41.3363688!4d19.8144158!16s%2Fg%2F11hblj7hl0?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
     }
 ]

@@ -24,19 +24,40 @@ document.addEventListener('DOMContentLoaded', function () {
                 filteredCompanies.forEach(company => {
                     const marker = L.marker([company.lat, company.lng]).addTo(map);
                     const popupContent = `
-                    <b>${company.name}</b><br>
-                    ${company.website ? `Website: <a href="${company.website}" target="_blank">${company.website}</a>` : ''}<br>
-                    ${company.address ? `Address: <a href="${company.address}" target="_blank">Directions</a>` : ''}<br>
+                        <b>${company.name}</b><br>
+                        ${company.website ? `Website: <a href="${company.website}" target="_blank">${company.website}</a>` : ''}<br>
+                        ${company.address ? `Address: <a href="${company.address}" target="_blank">Directions</a>` : ''}<br>
                     `;
                     marker.bindPopup(popupContent);
                     markers.push(marker);
                 });
+
+                // Center the map on the first result
+                if (filteredCompanies.length > 0) {
+                    const firstCompany = filteredCompanies[0];
+                    map.setView([firstCompany.lat, firstCompany.lng], 15); // Zoom level 15
+                }
             })
             .catch(error => console.error('Error fetching company data:', error));
     }
 
     // Load all companies initially
     loadCompanies();
+
+    // Load company names for autocomplete
+    function loadCompanyNames() {
+        fetch('/api/companies')
+            .then(response => response.json())
+            .then(data => {
+                const companyNames = data.map(company => company.name);
+                const datalist = document.getElementById('companyNames');
+                datalist.innerHTML = companyNames.map(name => `<option value="${name}">`).join('');
+            })
+            .catch(error => console.error('Error fetching company names:', error));
+    }
+
+    // Load company names for autocomplete
+    loadCompanyNames();
 
     // Search button functionality
     document.getElementById('searchButton').addEventListener('click', function () {
@@ -47,34 +68,48 @@ document.addEventListener('DOMContentLoaded', function () {
     // Suggest a Company button functionality
     document.getElementById('suggestButton').addEventListener('click', function () {
         const companyName = prompt("Enter the name of the company:");
-        if (companyName) {
-            const companyInfo = prompt("Enter some information about the company:");
-            const companyWebsite = prompt("Enter the company's website (optional):");
-            const companyAddress = prompt("Enter the company's address (optional):");
-            const companyPhone = prompt("Enter the company's phone number (optional):");
-
-            // Send the suggestion to the backend (you'll need to implement this endpoint)
-            fetch('/api/suggest', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: companyName,
-                    info: companyInfo,
-                    website: companyWebsite,
-                    address: companyAddress,
-                    phone: companyPhone,
-                }),
-            })
-                .then(response => response.json())
-                .then(data => {
-                    alert('Thank you for your suggestion!');
-                })
-                .catch(error => {
-                    console.error('Error submitting suggestion:', error);
-                    alert('An error occurred. Please try again.');
-                });
+        if (!companyName) {
+            alert("Company name is required!");
+            return;
         }
+
+        const companyWebsite = prompt("Enter the company's website (optional):");
+        if (companyWebsite && !companyWebsite.startsWith('http')) {
+            alert("Website must start with 'http' or 'https'!");
+            return;
+        }
+
+        const companyAddress = prompt("Enter the company's Google Maps address (required):");
+        if (!companyAddress) {
+            alert("Google Maps address is required!");
+            return;
+        }
+
+        // Send the suggestion to the backend
+        fetch('/api/suggest', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: companyName,
+                website: companyWebsite,
+                address: companyAddress,
+            }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "success") {
+                    alert('Thank you for your suggestion!');
+                    loadCompanies(); // Reload companies to show the new one
+                    loadCompanyNames(); // Reload autocomplete suggestions
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error submitting suggestion:', error);
+                alert('An error occurred. Please try again.');
+            });
     });
 });
