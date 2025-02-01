@@ -11,9 +11,13 @@
 <body>
     <h1>TechMap</h1>
     <div class="controls">
-        <input type="text" id="searchInput" placeholder="Search for companies..." list="companyNames">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for companies..." list="companyNames">
+            <span id="clearSearch" class="clear-button">&times;</span>
+        </div>
         <datalist id="companyNames"></datalist>
         <button id="searchButton">Search</button>
+        <button id="viewAllButton">View All</button>
         <button id="suggestButton">Suggest a Company</button>
     </div>
     <div id="map"></div>

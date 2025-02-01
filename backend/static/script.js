@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const map = L.map('map').setView([41.3275, 19.8187], 12); // Set to your city's coordinates
+    // Initial map coordinates and zoom level
+    const initialCoordinates = [41.3275, 19.8187];
+    const initialZoom = 14;
+
+    // Initialize the map
+    const map = L.map('map').setView(initialCoordinates, initialZoom);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
+        attribution: '© OpenStreetMap contributors & Mateo Çela'
     }).addTo(map);
 
     let markers = []; // Store markers for easy removal
@@ -32,10 +37,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     markers.push(marker);
                 });
 
-                // Center the map on the first result
-                if (filteredCompanies.length > 0) {
+                // Zoom logic
+                if (searchQuery && filteredCompanies.length > 0) {
+                    // If searching and results exist, zoom to first result
                     const firstCompany = filteredCompanies[0];
-                    map.setView([firstCompany.lat, firstCompany.lng], 15); // Zoom level 15
+                    map.setView([firstCompany.lat, firstCompany.lng], 18); // Zoom level 18
+                } else {
+                    // If not searching or no results, reset to initial view
+                    map.setView(initialCoordinates, initialZoom);
                 }
             })
             .catch(error => console.error('Error fetching company data:', error));
@@ -43,6 +52,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Load all companies initially
     loadCompanies();
+
+    // Clear search input functionality
+    document.getElementById('clearSearch').addEventListener('click', function () {
+        document.getElementById('searchInput').value = '';
+        loadCompanies();
+        this.style.display = 'none';
+    });
+
+    // Show/hide clear button based on input
+    document.getElementById('searchInput').addEventListener('input', function () {
+        const clearButton = document.getElementById('clearSearch');
+        clearButton.style.display = this.value ? 'block' : 'none';
+    });
 
     // Load company names for autocomplete
     function loadCompanyNames() {
@@ -63,6 +85,13 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('searchButton').addEventListener('click', function () {
         const searchQuery = document.getElementById('searchInput').value;
         loadCompanies(searchQuery);
+    });
+
+    // View All button functionality
+    document.getElementById('viewAllButton').addEventListener('click', function () {
+        // Clear the search input and reset the map
+        document.getElementById('searchInput').value = '';
+        loadCompanies();
     });
 
     // Suggest a Company button functionality

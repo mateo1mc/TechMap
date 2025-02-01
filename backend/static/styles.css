@@ -21,12 +21,43 @@ h1 {
     margin: 10px 0;
 }
 
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
 #searchInput {
     padding: 10px;
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.clear-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #999;
+    font-size: 20px;
+    display: none; /* Hide by default */
+    z-index: 1; /* Ensure it appears above the input */
+}
+
+.clear-button:hover {
+    color: #666;
+}
+
+/* Show the clear button when input has text */
+input[type="text"]:not(:placeholder-shown) + .clear-button {
+    display: block;
+}
+
+/* Hide the dropdown triangle */
+input[type="text"]::-webkit-calendar-picker-indicator {
+    display: none;
 }
 
 button {
@@ -44,10 +75,25 @@ button:hover {
     background-color: #0056b3;
 }
 
+#viewAllButton {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#viewAllButton:hover {
+    background-color: #218838;
+}
+
 #map {
-    height: 70vh; /* Reduce the map height to 70% of the viewport height */
-    width: 90%; /* Make the map width 90% of the viewport width */
-    max-width: 1200px; /* Optional: Set a maximum width for the map */
+    height: 70vh;
+    width: 90%;
+    max-width: 1200px;
     border: 2px solid #ccc;
     border-radius: 10px;
     margin: 10px 0;

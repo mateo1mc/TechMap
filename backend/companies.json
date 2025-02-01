@@ -120,14 +120,6 @@
         "address": "https://www.google.com/maps/place/SWS.AL+-+Smart+Web+Solutions/data=!4m7!3m6!1s0x135031751fb91b3f:0xe7acd369f2f70fa0!8m2!3d41.3158594!4d19.8150558!16s%2Fg%2F11nxcdt3dk!19sChIJPxu5H3UxUBMRoA_38mnTrOc"
     },
     {
-        "id": 16,
-        "name": "Soft & Solution",
-        "lat": 41.329305,
-        "lng": 19.8257418,
-        "website": "https://softsolution.al/",
-        "address": "https://maps.app.goo.gl/bhqopq1RJNqvkRKB8"
-    },
-    {
         "id": 17,
         "name": "Tola Software Services",
         "lat": 41.3267197,
@@ -601,11 +593,11 @@
     },
     {
         "id": 77,
-        "name": "Soft & Solution - Hoxha Tahsin Office",
-        "lat": 41.3325616,
-        "lng": 19.83099,
+        "name": "Soft & Solution",
+        "lat": 41.329305,
+        "lng": 19.8257418,
         "website": "http://www.softsolution.al/",
-        "address": "https://www.google.com/maps/place/Soft+%26+Solution+-+Hoxha+Tahsin+Office/data=!4m7!3m6!1s0x1350311be9f0cff9:0x568ca58cebe43441!8m2!3d41.3325616!4d19.83099!16s%2Fg%2F11lrh51fpt!19sChIJ-c_w6RsxUBMRQTTk64yljFY"
+        "address": "https://www.google.com/maps/place/Soft+%26+Solution/@41.329305,19.8257418,654m/data=!3m2!1e3!4b1!4m6!3m5!1s0x1350313e2b59c887:0x5d0072d8cd6d64df!8m2!3d41.329305!4d19.8257418!16s%2Fg%2F11c1n1qds3?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
     },
     {
         "id": 78,
@@ -1070,5 +1062,37 @@
         "lng": 19.8144158,
         "website": "https://smartworknet.eu/",
         "address": "https://www.google.com/maps/place/Smartwork+shpk/@41.3363688,19.8144158,17z/data=!3m1!4b1!4m6!3m5!1s0x1350311fa563210d:0xc25e15a7f62db683!8m2!3d41.3363688!4d19.8144158!16s%2Fg%2F11hblj7hl0?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 136,
+        "name": "NorthWind",
+        "lat": 41.3332717,
+        "lng": 19.802411,
+        "website": "https://northwind.al/",
+        "address": "https://www.google.com/maps/place/North+Wind/@41.3332717,19.802411,137m/data=!3m1!1e3!4m6!3m5!1s0x13503169ec42fe01:0x4db331b165923d61!8m2!3d41.3332774!4d19.8029099!16s%2Fg%2F11q8vp9l9c?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 137,
+        "name": "CData Software",
+        "lat": 41.3265534,
+        "lng": 19.8218395,
+        "website": "https://www.cdata.com/",
+        "address": "https://www.google.com/maps/place/Murat+Toptani+St+1001,+Tiran%C3%AB,+Albania/@41.3265534,19.8218395,19z/data=!4m6!3m5!1s0x1350311a7d82da87:0xc83d63f0ba2961a9!8m2!3d41.3266218!4d19.8217017!16s%2Fg%2F11f8l2gt7t?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 138,
+        "name": "Alphatechs",
+        "lat": 41.321947,
+        "lng": 19.8026567,
+        "website": "https://www.alphatechs.al/",
+        "address": "https://www.google.com/maps/place/Bulevardi+Gjergj+Fishta,+Tiran%C3%AB,+Albania/@41.321947,19.8026567,17z/data=!3m1!4b1!4m6!3m5!1s0x135031aa88eea727:0x2782f605f415d544!8m2!3d41.321943!4d19.8052316!16s%2Fg%2F1vwgy730?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 139,
+        "name": "DuoTech",
+        "lat": 41.3309683,
+        "lng": 19.8170511,
+        "website": "https://www.duo-tech.com/",
+        "address": "https://www.google.com/maps/place/Cirku+i+Tiran%C3%ABs/@41.3309683,19.8170511,20z/data=!4m6!3m5!1s0x1350310e46faf02b:0x6abec833a9cd5420!8m2!3d41.3310488!4d19.8169854!16s%2Fg%2F1tsq81xs?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
     }
 ]
