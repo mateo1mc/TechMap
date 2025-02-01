@@ -1,24 +1,31 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Dark Theme */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Make the body take up the full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
 }
 
 h1 {
     text-align: center;
-    margin: 10px 0;
-    font-size: 24px;
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #00ff88; /* Techy green accent */
 }
 
 .controls {
     text-align: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .search-container {
@@ -27,27 +34,36 @@ h1 {
 }
 
 #searchInput {
-    padding: 10px;
+    padding: 12px;
     width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
     font-size: 16px;
+    background-color: #1e1e1e; /* Dark input background */
+    color: #ffffff; /* Light text */
+    transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #00ff88; /* Highlight input on focus */
+    outline: none;
 }
 
 .clear-button {
     position: absolute;
-    right: 10px;
+    right: 35px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: #999;
+    color: #666;
     font-size: 20px;
-    display: none; /* Hide by default */
-    z-index: 1; /* Ensure it appears above the input */
+    display: none;
+    z-index: 1;
+    transition: color 0.3s ease;
 }
 
 .clear-button:hover {
-    color: #666;
+    color: #00ff88; /* Techy green accent */
 }
 
 /* Show the clear button when input has text */
@@ -61,40 +77,51 @@ input[type="text"]::-webkit-calendar-picker-indicator {
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 0 5px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+    border-radius: 8px;
+    background-color: #00ff88; /* Techy green accent */
+    color: #121212; /* Dark text */
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #00cc66; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
-#viewAllButton {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#viewAllButton:hover {
-    background-color: #218838;
+button:active {
+    transform: translateY(0); /* Reset on click */
 }
 
 #map {
     height: 70vh;
     width: 90%;
     max-width: 1200px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Custom scrollbar (optional) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff88;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc66;
 }

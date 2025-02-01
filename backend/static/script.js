@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize the map
     const map = L.map('map').setView(initialCoordinates, initialZoom);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors & Mateo Çela'
+        attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
     let markers = []; // Store markers for easy removal
@@ -85,13 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('searchButton').addEventListener('click', function () {
         const searchQuery = document.getElementById('searchInput').value;
         loadCompanies(searchQuery);
-    });
-
-    // View All button functionality
-    document.getElementById('viewAllButton').addEventListener('click', function () {
-        // Clear the search input and reset the map
-        document.getElementById('searchInput').value = '';
-        loadCompanies();
     });
 
     // Suggest a Company button functionality
