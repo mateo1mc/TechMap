@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "ATIS Software Factory & Digital Agency in Tirana Albania",
+        "name": "ATIS Software Factory",
         "lat": 41.3353451,
         "lng": 19.8166053,
         "website": "http://atis.al/",
@@ -1001,7 +1001,7 @@
     },
     {
         "id": 127,
-        "name": "Ritech Technologies",
+        "name": "Ritech International AG",
         "lat": 41.31400680931462,
         "lng": 19.798339018103,
         "website": "http://www.ritech.co/",
@@ -1110,5 +1110,29 @@
         "lng": 19.8155129,
         "website": "https://www.eng.it/",
         "address": "https://www.google.com/maps/place/3,+Rruga+Ibrahim+Rugova+40,+Tiran%C3%AB,+Albania/@41.3243628,19.8155129,17z/data=!3m1!4b1!4m5!3m4!1s0x13503104e9ce35a1:0x774577e69728ea03!8m2!3d41.3243604!4d19.817044?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 141,
+        "name": "TeamSystem Tirana",
+        "lat": 41.3222915,
+        "lng": 19.7900657,
+        "website": "https://www.teamsystem.com/",
+        "address": "https://www.google.com/maps/place/TeamSystem+Tirana/@41.3222915,19.7900657,17z/data=!3m1!4b1!4m6!3m5!1s0x135031c86f654fbb:0x192d5266cf56ba71!8m2!3d41.3222875!4d19.7926406!16s%2Fg%2F11kk7vslrs?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 142,
+        "name": "HENOTICS",
+        "lat": 41.3330386,
+        "lng": 19.8177714,
+        "website": "https://henotics.com/",
+        "address": "https://www.google.com/maps/place/Henotics/@41.3330386,19.8177714,17z/data=!3m1!4b1!4m6!3m5!1s0x13503126ee0fba1b:0xc0d153279769c268!8m2!3d41.3330346!4d19.8203463!16s%2Fg%2F11kj4lyvwm?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 143,
+        "name": "Facilization",
+        "lat": 41.313696,
+        "lng": 19.8128201,
+        "website": "http://www.facilization.com/",
+        "address": "https://www.google.com/maps/place/Facilization/@41.313696,19.8128201,17z/data=!3m1!4b1!4m6!3m5!1s0x13503103fb584925:0x6c0e3046f2cdfd09!8m2!3d41.313692!4d19.815395!16s%2Fg%2F1hc3wt9y4?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
     }
 ]
