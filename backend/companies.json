@@ -1102,5 +1102,13 @@
         "lng": 19.8170511,
         "website": "https://www.duo-tech.com/",
         "address": "https://www.google.com/maps/place/Cirku+i+Tiran%C3%ABs/@41.3309683,19.8170511,20z/data=!4m6!3m5!1s0x1350310e46faf02b:0x6abec833a9cd5420!8m2!3d41.3310488!4d19.8169854!16s%2Fg%2F1tsq81xs?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 140,
+        "name": "Engineering Albania",
+        "lat": 41.3243628,
+        "lng": 19.8155129,
+        "website": "https://www.eng.it/",
+        "address": "https://www.google.com/maps/place/3,+Rruga+Ibrahim+Rugova+40,+Tiran%C3%AB,+Albania/@41.3243628,19.8155129,17z/data=!3m1!4b1!4m5!3m4!1s0x13503104e9ce35a1:0x774577e69728ea03!8m2!3d41.3243604!4d19.817044?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
     }
 ]
