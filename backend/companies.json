@@ -120,6 +120,14 @@
         "address": "https://www.google.com/maps/place/SWS.AL+-+Smart+Web+Solutions/data=!4m7!3m6!1s0x135031751fb91b3f:0xe7acd369f2f70fa0!8m2!3d41.3158594!4d19.8150558!16s%2Fg%2F11nxcdt3dk!19sChIJPxu5H3UxUBMRoA_38mnTrOc"
     },
     {
+        "id": 16,
+        "name": "Algorhythm",
+        "lat": 41.317518,
+        "lng": 19.8150272,
+        "website": "https://algorhythm.al/",
+        "address": "https://www.google.com/maps/place/Algorhythm/@41.317518,19.8150272,20z/data=!4m6!3m5!1s0x135031bdfe306403:0x988c1a5813792c38!8m2!3d41.317514!4d19.8153062!16s%2Fg%2F11rqxrsnt7?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
         "id": 17,
         "name": "Tola Software Services",
         "lat": 41.3267197,

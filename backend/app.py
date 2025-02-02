@@ -16,6 +16,7 @@ def load_companies():
 def save_companies(companies):
     file_path = os.path.join(os.path.dirname(__file__), 'companies.json')
     with open(file_path, 'w', encoding='utf-8') as file:
+        
         json.dump(companies, file, ensure_ascii=False, indent=4)
 
 # Extract latitude and longitude from a Google Maps link
