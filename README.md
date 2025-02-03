@@ -22,6 +22,10 @@ TechMap is a modern, interactive web application that displays a map of Tirana c
 
 ---
 
+## 🔗 **Check out the live demo here:** [>>> Demo Link <<<](https://techmapal.pythonanywhere.com/)
+
+---
+
 ## Technologies Used 🛠️
 
 - **Frontend**:
