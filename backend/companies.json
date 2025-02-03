@@ -1134,5 +1134,13 @@
         "lng": 19.8128201,
         "website": "http://www.facilization.com/",
         "address": "https://www.google.com/maps/place/Facilization/@41.313696,19.8128201,17z/data=!3m1!4b1!4m6!3m5!1s0x13503103fb584925:0x6c0e3046f2cdfd09!8m2!3d41.313692!4d19.815395!16s%2Fg%2F1hc3wt9y4?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+    },
+    {
+        "id": 144,
+        "name": "AlbaVolt",
+        "lat": 41.3141233,
+        "lng": 19.798313,
+        "website": "https://albavolt.com/",
+        "address": "https://www.google.com/maps/place/AlbaVolt/@41.3141233,19.798313,17z/data=!3m1!4b1!4m6!3m5!1s0x135031b6c749e8ab:0x987d244e77ca94d7!8m2!3d41.3141193!4d19.8008879!16s%2Fg%2F11t85c8ypl?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
     }
 ]
