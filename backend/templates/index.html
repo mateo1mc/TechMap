@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechMap</title>
+    <title>TechMap Albania</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
-    <h1>TechMap</h1>
+    <h1>TechMap Albania</h1>
     <div class="controls">
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="Search for companies..." list="companyNames">
@@ -20,8 +20,11 @@
         <button id="searchButton">Search</button>
         <button id="suggestButton">Suggest a Company</button>
     </div>
+
+    <!-- The Map -->
     <div id="map"></div>
 
+    <!-- Bottom Footer -->
     <footer>
         Created with ❤️ by <a href="https://www.linkedin.com/in/mateo1mc" target="_blank">Mateo Ç.</a> - <span id="currentYear"></span>
     </footer>
