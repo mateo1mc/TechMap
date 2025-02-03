@@ -193,3 +193,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 });
+
+// Update the footer year dynamically
+document.getElementById('currentYear').textContent = new Date().getFullYear();
