@@ -145,23 +145,46 @@ document.addEventListener('DOMContentLoaded', function () {
         loadCompanies(searchQuery);
     });
 
-    // Suggest a Company button functionality
-    document.getElementById('suggestButton').addEventListener('click', function () {
-        const companyName = prompt("Enter the name of the company:");
-        if (!companyName) {
-            alert("Company name is required!");
+    // "Suggest a Company" - Get the modal and buttons
+    const suggestModal = document.getElementById('suggestModal');
+    const suggestButton = document.getElementById('suggestButton');
+    const closeModal = document.querySelector('.close-modal');
+    const suggestForm = document.getElementById('suggestForm');
+
+    // Open the modal when "Suggest a Company" is clicked
+    suggestButton.addEventListener('click', function () {
+        suggestModal.style.display = 'flex';
+    });
+
+    // Close the modal when the close button is clicked
+    closeModal.addEventListener('click', function () {
+        suggestModal.style.display = 'none';
+    });
+
+    // Close the modal when clicking outside the modal
+    window.addEventListener('click', function (event) {
+        if (event.target === suggestModal) {
+            suggestModal.style.display = 'none';
+        }
+    });
+
+    // Handle form submission
+    suggestForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        const companyName = document.getElementById('companyName').value;
+        const companyWebsite = document.getElementById('companyWebsite').value;
+        const companyAddress = document.getElementById('companyAddress').value;
+
+        // Validate required fields
+        if (!companyName || !companyAddress) {
+            alert("Company Name and Google Maps Address are required!");
             return;
         }
 
-        const companyWebsite = prompt("Enter the company's website (optional):");
+        // Validate website URL (if provided)
         if (companyWebsite && !companyWebsite.startsWith('http')) {
             alert("Website must start with 'http' or 'https'!");
-            return;
-        }
-
-        const companyAddress = prompt("Enter the company's Google Maps address (required):");
-        if (!companyAddress) {
-            alert("Google Maps address is required!");
             return;
         }
 
@@ -181,6 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 if (data.status === "success") {
                     alert('Thank you for your suggestion!');
+                    suggestModal.style.display = 'none'; // Close the modal
                     loadCompanies(); // Reload companies to show the new one
                     loadCompanyNames(); // Reload autocomplete suggestions
                 } else {

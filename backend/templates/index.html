@@ -24,6 +24,26 @@
     <!-- The Map -->
     <div id="map"></div>
 
+    <!-- Modal for Suggest a Company -->
+    <div id="suggestModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Suggest a Company</h2>
+            <form id="suggestForm">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+
+                <label for="companyWebsite">Website (optional):</label>
+                <input type="url" id="companyWebsite" name="companyWebsite" placeholder="https://example.com">
+
+                <label for="companyAddress">Google Maps Address:</label>
+                <input type="url" id="companyAddress" name="companyAddress" required placeholder="https://www.google.com/maps/place/...">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Bottom Footer -->
     <footer>
         Created with ❤️ by <a href="https://www.linkedin.com/in/mateo1mc" target="_blank">Mateo Ç.</a> - <span id="currentYear"></span>
