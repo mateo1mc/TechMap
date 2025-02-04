@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechMap Albania</title>
+    
+    <!-- TechMap title -->
+    <title>TechMap Albania - Find and Explore Tech Companies in Albania</title>
+    <meta name="description" content="Explore and discover tech companies in Albania with TechMap. Find company locations, websites, and more.">
+    
+    <!-- TechMap Tags -->
+    <meta name="keywords" content="TechMap Albania, tech companies Albania, startups Albania, IT companies, technology business">
+    <meta name="robots" content="index, follow">
+    
+    <!-- TechMap - Social Sharing -->
+    <meta property="og:title" content="TechMap Albania - Explore Tech Companies">
+    <meta property="og:description" content="Discover top technology companies in Albania with TechMap. Search by location, website, and industry.">
+    <meta property="og:image" content="https://github.com/mateo1mc/TechMap/blob/48cfadd356d7b3b2f52f6b37a027ee65624893c0/TechMapAL.png">
+    <meta property="og:url" content="https://techmapal.pythonanywhere.com/">
+    <meta property="og:type" content="website">
+    
+    <!-- TechMap - Twitter Card for Social Media -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TechMap Albania - Explore Tech Companies">
+    <meta name="twitter:description" content="Discover top technology companies in Albania with TechMap.">
+    <meta name="twitter:image" content="https://github.com/mateo1mc/TechMap/blob/48cfadd356d7b3b2f52f6b37a027ee65624893c0/TechMapAL.png">
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
+    <!--  TechMap Head Structure -->
     <h1>TechMap Albania</h1>
+    <!-- <h1>TechMap Albania - Discover and Connect with Tech Companies</h1>
+    <h2>Find Technology Companies in Albania</h2>
+    <h3>Search and Suggest Companies</h3> -->
+
     <div class="controls">
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="Search for companies..." list="companyNames">
@@ -21,10 +47,10 @@
         <button id="suggestButton">Suggest a Company</button>
     </div>
 
-    <!-- The Map -->
+    <!-- TechMap - The Map -->
     <div id="map"></div>
 
-    <!-- Modal for Suggest a Company -->
+    <!-- TechMap - Modal for Suggest a Company -->
     <div id="suggestModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -44,7 +70,7 @@
         </div>
     </div>
 
-    <!-- Bottom Footer -->
+    <!-- TechMap - Bottom Footer -->
     <footer>
         Created with ❤️ by <a href="https://www.linkedin.com/in/mateo1mc" target="_blank">Mateo Ç.</a> - <span id="currentYear"></span>
     </footer>
