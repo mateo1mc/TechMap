@@ -136,6 +136,8 @@ Contributions are welcome! If you'd like to improve TechMap, follow these steps:
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/mateo1mc/TechMap/blob/fdb2cfc8e58a4ebf870547f8d2ace240fa825e45/LICENSE) file for details.
 
+**If you find this project useful, consider giving it a ⭐ on GitHub! 🚀**
+
 ---
 
 ## Acknowledgments 🙏
